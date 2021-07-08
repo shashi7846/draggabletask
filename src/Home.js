@@ -35,8 +35,10 @@ const onEnd = (result) => {
           AddUser
         </button>
       </div>
+
 {/* // draggable is not supporting any styles the details are available in a row perfectly after implementing the draggable it got merged under
 //one table header */}
+
       <DragDropContext onDragEnd={onEnd}>
         <Droppable droppableId="12345">
           {(provided, snapshot) => (
@@ -119,3 +121,35 @@ export default Home;
 const Container = styled.div`
   background-color: brown;
 `;
+// this below data after mapping displayed in correct feilds but after implementing with draggable it got merged 
+
+// {data.map((use, index) => {
+//   return (
+//     <tr>
+//       <th>{use.name}</th>
+//       <td>{use.email}</td>
+
+//       <td>{use.gender}</td>
+
+//       <td>
+//         <button
+//           className="btn btn-primary btn-sm"
+//           onClick={async () => {
+//             history.push(`/Update/${use._id}`);
+//           }}
+//         >
+//           Update
+//         </button>
+//         <button
+//           className="btn btn-danger btn-sm"
+//           onClick={async () => {
+//             await Deleteuserbyid(use._id);
+//             history.push("/");
+//           }}
+//         >
+//           delete
+//         </button>
+//       </td>
+//     </tr>
+//   );
+// })}
