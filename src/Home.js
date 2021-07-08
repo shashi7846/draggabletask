@@ -35,7 +35,8 @@ const onEnd = (result) => {
           AddUser
         </button>
       </div>
-
+{/* // draggable is not supporting any styles the details are available in a row perfectly after implementing the draggable it got merged under
+//one table header */}
       <DragDropContext onDragEnd={onEnd}>
         <Droppable droppableId="12345">
           {(provided, snapshot) => (
